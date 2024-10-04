@@ -39,7 +39,7 @@
     <div class="container">
         <h1></h1>
         <p></p>
-        <button id="play-button">Click kar de bhai</button>
+        <button id="play-button">Play</button>
         <audio id="backgroundMusic" loop>
             <source src="sound/song1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -55,10 +55,10 @@
             if (!isPlaying) {
                 audio.currentTime = 52; // Set start time to 52 seconds
                 audio.play();
-                playButton.textContent = 'Pause Music';
+                playButton.textContent = 'Pause';
             } else {
                 audio.pause();
-                playButton.textContent = 'Play Music';
+                playButton.textContent = 'Play';
             }
             isPlaying = !isPlaying;
         });
