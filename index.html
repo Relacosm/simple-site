@@ -53,7 +53,7 @@
 
         playButton.addEventListener('click', function() {
             if (!isPlaying) {
-                audio.currentTime = 52; // Set start time to 52 seconds
+                audio.currentTime = 0; // Set start time to 52 seconds
                 audio.play();
                 playButton.textContent = 'Pause';
             } else {
